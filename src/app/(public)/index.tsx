@@ -74,7 +74,7 @@ export default function Home() {
                   <VStack className="p-4 mb-2 border border-gray-300 rounded-md">
                     <Text fontWeight={"$bold"}>Escola: {item.name}</Text>
                     <Text fontSize={"$sm"}>Endereço: {item.address}</Text>
-                    <View className="flex-row  w-full gap-2 mt-2">
+                    <View className="flex-row items-center w-full gap-2 mt-2">
                       <Button
                         size="sm"
                         onPress={() =>
@@ -94,7 +94,6 @@ export default function Home() {
 
                       <Button
                         size="sm"
-                        mt={2}
                         onPress={() => handleEdit(item)}
                         disabled={isLoading}
                       >
